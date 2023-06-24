@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        h2{
+            display: inline;
+            color: white;
+            position: relative;
+            top: 22px;
+            left: 40px;
+        }
+        .navbar{
+            background-color: black;
+            height: 80px;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            position: relative;
+            left: 900px;
+            top: 20px;
+            margin-right: 12px;
+        }
+        .section1{
+            background-color: whitesmoke;
+            width: 100%;
+        }
+        .Books{
+            display: inline-block;
+            position: relative;
+            width: 1100px;
+            height: 950px;
+            left: 120px;
+            background-color:white;
+            top: 50px;
+        }
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td table {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+td table td {
+  border: none;
+  padding: 0;
+}
+.box2{
+    box-sizing:border-box;
+}
+#boddy{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+.container{
+    background-color:rgb(120, 241, 243);
+    padding: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius:4px;
+}
+
+input[type="submit"]
+{
+    background-color:rgb(182, 79, 230);
+    border: none;
+    padding: 16px;
+   
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: rgb(65, 65, 223);
+}
+h3{
+    font-size: larger;
+}
+
+    </style>
+</head>
+<body>
+        <div class="navbar">
+            <h2>Library System</h2>
+            <a href="#">Books</a>
+            <a href="#">Register</a>
+            <a href="#">Contect Us</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="section1">
+         <div class="Books">
+            <h1>Books</h1>
+            <table>
+                <tr>
+                  <th>Book ID</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Genre</th>
+                  <th>Availability</th>
+                </tr>
+                <tr>
+                  <td rowspan="4">1</td>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>Publication Date:</td>
+                        <td>January 1, 2022</td>
+                      </tr>
+                      <tr>
+                        <td>Page Count:300</td>
+                      </tr>
+                      <tr>
+                        <td>ISBN:</td>
+                        <td>978-1234567890</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td rowspan="4">AuthorName 1</td>
+                  <td rowspan="4">Genere 1</td>
+                  <td rowspan="4">Available</td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>Publication Date:</td>
+                        <td>March 15, 2023</td>
+                      </tr>
+                      <tr>
+                        <td>Page Count:250</td>
+                      </tr>
+                      <tr>
+                        <td>ISBN:</td>
+                        <td>978-0987654321</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>Publication Date:</td>
+                        <td>November 5, 2021</td>
+                      </tr>
+                      <tr>
+                        <td>Page Count:400</td>
+                      </tr>
+                      <tr>
+                        <td>ISBN:</td>
+                        <td>978-9876543210</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>Publication Date:</td>
+                        <td>June 30, 2023</td>
+                      </tr>
+                      <tr>
+                        <td>Page Count:150</td>
+                      </tr>
+                      <tr>
+                        <td>ISBN:</td>
+                        <td>978-0192837465</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">2</td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>January 1, 2022</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:300</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-1234567890</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td rowspan="4">AuthorName2</td>
+                    <td rowspan="4">Genere 2</td>
+                    <td rowspan="4">NotAvailable</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>March 15, 2023</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:250</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-0987654321</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>November 5, 2021</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:400</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-9876543210</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>June 30, 2023</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:150</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-0192837465</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="4">3</td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>January 1, 2022</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:300</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-1234567890</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td rowspan="4">AuthorName3</td>
+                    <td rowspan="4">Genere 3</td>
+                    <td rowspan="4">Available</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>March 15, 2023</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:250</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-0987654321</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>November 5, 2021</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:400</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-9876543210</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>June 30, 2023</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:150</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-0192837465</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                    <table>
+                  </div>
+                  <div class="box2">
+                <div id="boddy">
+                    <div class="container">
+                        <form action="">
+                       <h3 id="bold">Register Now</h3>
+                       <h6>Required fileds are followed by *</h6> 
+                       <p>Name:* <input type="text" name="name" required placeholder="ENTER YOUR NAME"></p>
+                       <p>class:* <input type="number" name="class"required placeholder="Class"></p>
+                       <p><h3>Gender</h3> <fieldset> <legend>select ganeder</legend>
+                           Male:*<input type="radio" name="gender" id="male" required>
+                           Female:*<input type="radio" name="gender" id="female"required>
+                        </p></fieldset>
+                       <p>
+                       Address: <textarea name="address" id="address" cols="50" rows="2" placeholder="address please" ></textarea>
+                       </p>
+                       <p>Email:<input type="email" name="email" id="email" placeholder="email"></p>
+                       <p>contect no.* <input type="number" name="contect" id="contect" required></p>
+                       <p> 
+                          New Address location : *
+                           <select name="new.address" id="new.address=" required >
+                               <option value="">--select address</option>
+                               <option value="indore">indore</option>
+                               <option value="bombayt">bombay</option>
+                               <option value="dehli">delhi</option>
+                               <option value="banglore">banglore</option>
+                               <option value="pune">pune</option>
+                           </select>
+                       </p>
+                        application date: <input type="date" name="date" id="date">
+                        <p>
+                            File password:* <input type="password" name="password" id="File password" required placeholder="password" >
+                       
+                        </p>
+                        <!-- <a href="TodoListformicro.html"> Enroll Now</a> -->
+                       <p><input type="submit"value="Submit"></p> 
+                        </form>
+                    </div>
+                           </div>
+                  </div>
+     </div>
+
+</body>
+</html>
